@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box; 
+
+}  
+
 h2 {
   font-size: calc(10px + 3vmin);
   color: #d4d9e9;
@@ -10,6 +15,7 @@ h3 {
   margin: 32px 0 16px 0;
 }
 
+
 .App {
   background-color: #0a192f;
   text-align: center;
@@ -18,14 +24,15 @@ h3 {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 24px;
+  overflow-x: hidden; 
 }
 
 .App-header-image {
   width: calc(16px + 15vmin);
-  /* height: calc(128px + 1.5vmin); */
   border-radius: 50%;
   border: #d4d9e9 1px solid
 }
+
 
 .App-header-text {
   display: flex;
@@ -34,6 +41,7 @@ h3 {
   justify-content: center;
   color: #d4d9e9;
 }
+
 
 .App-logo {
   width: calc(10px + 1.5vmin);
@@ -46,6 +54,7 @@ h3 {
 .App-logo:hover {
   opacity: 1;
 }
+
 
 .App-about {
   color: #a1a8c0;
@@ -71,7 +80,8 @@ h3 {
 .App-card {
   background-color: rgba(255, 255, 255, 0.10);
   display: flex;
-  width: fit-content;
+  width: 100%;
+  max-width: 100%;
   flex-direction: column;
   padding: 16px;
   border-radius: 4px;
@@ -87,12 +97,6 @@ h3 {
   background-color: rgba(255, 255, 255, 0.15);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
 }
-
-/* .App-card-icon {
-  width: 300px;
-  margin: 0 auto;
-  border-radius: 4px;
-} */
 
 .App-card-icon {
   width: 100%;
@@ -122,7 +126,6 @@ h3 {
 .App-card-link a {
   color: #64ffda;
   text-decoration: none;
-  /* font-size: 16px; */
   transition: transform 0.2s;
   display: inline-block;
   font-size: calc(8px + 1vmin);
