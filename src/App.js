@@ -4,19 +4,22 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>
-          Roman Ivashkevych
-        </h2>
-        <a href='https://github.com/TupacShampur'>
-          <img className='App-logo' src='/github-mark-white.png' alt='GitHub'/>
-        </a>
+        <div className='App-header-text'>
+          <h2>
+            Roman Ivashkevych
+          </h2>
+          <a href='https://github.com/TupacShampur'>
+            <img className='App-logo' src='/github-mark-white.png' alt='GitHub'/>
+          </a>
+        </div>
+        <img className='App-header-image' src='/Photo.png'/>
       </header>
       <p className='App-about'>
         Junior Front-End Developer. I build web applications using React. I have experience working with APIs, OAuth authentication, and deploying applications to production. I’m looking for a team where I can grow and bring real value.
       </p>
       <div className='App-projects'>
         <h3>Projects</h3>
-        <p className='App-projects-subtitle'>new projects coming soon...</p>
+        <p className='App-projects-subtitle'>More projects coming soon, currently working on a new app.</p>
         <div className='App-card'>
           <a href='https://jammming-nine.vercel.app/' target='_blank' rel='noopener noreferrer'>
 
@@ -35,12 +38,11 @@ function App() {
       <div className="App-skills">
         <h3>Skills</h3>
         <div className="App-skills-list">
-          <span>React</span>
-          <span>JavaScript</span>
-          <span>HTML/CSS</span>
-          <span>Git</span>
-          <span>REST API</span>
-          <span>OAuth2</span>
+          <ul>
+            <li>Frontend: React, JavaScript (ES6+), HTML5/CSS3</li>
+            <li>Tools: Git/GitHub, Netlify, Vercel, GPT, Claudy</li>
+            <li>Other: REST API, OAuth2/PKCE, State Management, Async/await</li>
+          </ul>
         </div>
       </div>
       <div className='App-contact'>
