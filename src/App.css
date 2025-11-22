@@ -1,38 +1,149 @@
+h2 {
+  font-size: calc(10px + 3vmin);
+  color: #d4d9e9;
+  margin: 16px 0 16px 0;
+}
+
+h3 {
+  font-size: calc(10px + 2vmin);
+  color: #d4d9e9;
+  margin: 32px 0 16px 0;
+}
+
 .App {
+  background-color: #0a192f;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  min-height: 100vh;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  gap: calc(10px + 0.5vmin);
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #d4d9e9;
 }
 
-.App-link {
-  color: #61dafb;
+.App-logo {
+  width: calc(10px + 1.5vmin);
+  height: calc(10px + 1.5vmin);
+  display: block;
+  opacity: 0.7;
+  transition: opacity 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-logo:hover {
+  opacity: 1;
+}
+
+.App-about {
+  color: #a1a8c0;
+  font-size: calc(10px + 1vmin);
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 16px 0 0 0;
+}
+
+.App-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.App-projects-subtitle {
+  color: #a1a8c0;
+  margin-bottom: 16px;
+}
+
+.App-card {
+  background-color: rgba(255, 255, 255, 0.10);
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.App-card a {
+  text-decoration: none;
+}
+
+.App-card:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.App-card-icon {
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.App-card-header {
+  color: #d4d9e9;
+  margin: 12px 0;
+}
+
+.App-card-description {
+  color: #a1a8c0;
+  margin: 4px 0;
+}
+
+.App-card-specifics {
+  color: #64ffda;
+  font-size: 12px;
+}
+
+.App-card-link {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.App-card-link a {
+  color: #64ffda;
+  text-decoration: none;
+  font-size: 16px;
+  transition: transform 0.2s;
+  display: inline-block;
+}
+
+.App-card-link a:hover {
+  transform: translateX(5px);
+}
+
+.App-skills {
+  color: #d4d9e9;
+}
+
+.App-skills-list {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.App-skills-list span {
+  color: #64ffda;
+}
+
+.App-contact {
+  margin-bottom: 32px;
+}
+
+.App-contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.App-contact-info a {
+  text-decoration: none;
+  color: rgb(212, 217, 233, 0.9);
+  transition: color 0.3s;
+}
+
+.App-contact-info a:hover {
+  color: rgb(237, 239, 245);
 }
